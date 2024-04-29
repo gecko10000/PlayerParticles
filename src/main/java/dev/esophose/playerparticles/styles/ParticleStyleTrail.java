@@ -72,7 +72,6 @@ public class ParticleStyleTrail extends ConfiguredParticleStyle implements Liste
 
         for (ParticlePair particle : pplayer.getActiveParticlesForStyle(DefaultStyles.TRAIL)) {
             Location loc = player.getLocation();
-            loc.setY(loc.getY() + 1);
             this.particleManager.displayParticles(pplayer, player.getWorld(), particle, DefaultStyles.TRAIL.getParticles(particle, loc), false);
         }
     }
