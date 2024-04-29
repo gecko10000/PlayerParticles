@@ -123,13 +123,13 @@ public class GuiInventoryManageParticles extends GuiInventory {
         this.actionButtons.add(resetParticles);
 
         // Back Button
-        GuiActionButton backButton = new GuiActionButton(
+        /*GuiActionButton backButton = new GuiActionButton(
                 INVENTORY_SIZE - 1,
                 GuiIcon.BACK.get(),
                 localeManager.getLocaleMessage("gui-color-info") + localeManager.getLocaleMessage("gui-back-button"),
                 new String[]{},
                 (button, isShiftClick) -> guiManager.transition(new GuiInventoryDefault(pplayer)));
-        this.actionButtons.add(backButton);
+        this.actionButtons.add(backButton);*/
 
         this.populate();
     }
